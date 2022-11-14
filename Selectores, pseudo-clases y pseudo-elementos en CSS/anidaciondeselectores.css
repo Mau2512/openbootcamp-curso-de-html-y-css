@@ -1,0 +1,55 @@
+body{
+
+    background-color:crimson;
+    color:beige
+    
+}
+
+.contenedor{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+
+}
+
+#button{
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 2rem;
+    color:black;
+    background-image:linear-gradient(to right,rgb(255, 255, 255) 50%, rgb(0, 83, 14) 50% );
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+    border:none;
+    transition: background-position .5s ease;
+}
+
+
+
+#button::after{
+
+    content:"pasa por encima";
+}
+
+#button:hover::after{
+    content: "Hecho!";
+    
+    
+
+}
+
+#button:hover{
+    
+    background-position: right;
+    color: white;
+    
+}
+
+
+
+
